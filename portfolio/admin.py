@@ -12,6 +12,10 @@ from .models import (
     ThemeSettings,
 )
 
+admin.site.site_header = 'Portfolio Admin'
+admin.site.site_title = 'Portfolio Admin'
+admin.site.index_title = 'Content Management Dashboard'
+
 
 class ProjectImageInline(admin.TabularInline):
     model = ProjectImage
