@@ -5,11 +5,10 @@ from portfolio.views import (
     AboutSectionViewSet,
     CertificateViewSet,
     ContactMessageViewSet,
-    DashboardStatsView,
     ExperienceViewSet,
     HeroSectionViewSet,
-    ProjectViewSet,
     ProjectImageViewSet,
+    ProjectViewSet,
     SkillViewSet,
     ThemeSettingsViewSet,
 )
@@ -27,5 +26,4 @@ router.register('theme', ThemeSettingsViewSet, basename='theme')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('dashboard/stats/', DashboardStatsView.as_view(), name='dashboard-stats'),
 ]
